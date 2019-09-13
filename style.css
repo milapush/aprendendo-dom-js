@@ -1,0 +1,67 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+
+}
+
+
+header{
+    align-items: center;
+    background-color: black;
+    display: flex;
+    line-height:  50px;
+    justify-content: flex-end;
+}
+
+.menu-hamburguer{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    height: 30px;
+    justify-content: space-around;
+    margin: 10px;
+    width: 30px;
+}
+
+nav{
+    background-color: black;
+    /* display: none; */
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(-100%);
+    transition: .8s;
+    position: relative;
+    z-index: -1;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+span{
+    background-color: white;
+    display: block;
+    height: 3px;
+    transition: 0.6s ease;
+    width: 100%;
+}
+
+.traco-1,  .traco-3{
+    transform-origin: right center; 
+}
+
+.ativo .traco-1{
+    transform: rotateZ(-45deg);
+} 
+
+.ativo .traco-2{
+    opacity: 0;
+
+}
+.ativo .traco-3{
+    transform: rotateZ(45deg);
+}
+
+.visivel{
+    transform: translateY(0);
+} 
